@@ -1,0 +1,33 @@
+<!-- Cole este trecho dentro do <main> da sua página HTML.
+     Adicione <link rel="stylesheet" href="secao-liga.css"> dentro de <head>
+     e <script src="configuracao.js" defer></script> seguido de
+     <script src="secao-liga.js" defer></script> dentro de <head>
+     ou antes de </body>. -->
+<section class="vitrine-liga" id="liga-brasileirao" aria-labelledby="vitrine-liga-titulo">
+  <div class="vitrine-liga__banner">
+    <img class="vitrine-liga__banner-imagem" alt="" hidden />
+    <div class="vitrine-liga__efeito" aria-hidden="true"></div>
+    <div class="vitrine-liga__banner-conteudo">
+      <span class="vitrine-liga__etiqueta">COLEÇÃO DE FUTEBOL</span>
+      <h1 class="vitrine-liga__titulo" id="vitrine-liga-titulo">CAMPEONATO BRASILEIRO</h1>
+      <p class="vitrine-liga__descricao">Encontre as camisas do seu time favorito.</p>
+      <span class="vitrine-liga__chamada">ESCOLHA SEU CLUBE <span aria-hidden="true">↘</span></span>
+    </div>
+    <div class="vitrine-liga__marca" aria-hidden="true">BR<br />26</div>
+  </div>
+
+  <div class="vitrine-liga__linha-titulo">
+    <div>
+      <span class="vitrine-liga__sobre">NAVEGUE POR TIME</span>
+      <h2>Escolha seu clube</h2>
+    </div>
+    <div class="vitrine-liga__acoes">
+      <button class="vitrine-liga__seta" data-direcao="-1" type="button" aria-label="Deslizar para a esquerda">&#8592;</button>
+      <button class="vitrine-liga__seta" data-direcao="1" type="button" aria-label="Deslizar para a direita">&#8594;</button>
+    </div>
+  </div>
+  <div class="vitrine-liga__viewport" tabindex="0" aria-label="Carrossel horizontal de clubes; use as setas ou deslize">
+    <div class="vitrine-liga__lista" aria-live="off"></div>
+  </div>
+  <p class="vitrine-liga__aviso" role="status" aria-live="polite"></p>
+</section>

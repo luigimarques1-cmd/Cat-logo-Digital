@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vitrine de camisas de futebol por clube." />
+  <title>Coleção de Futebol | Exemplo de Landing Page</title>
+  <link rel="stylesheet" href="secao-liga.css" />
+  <script src="configuracao.js" defer></script>
+  <script src="secao-liga.js" defer></script>
+</head>
+<body>
+  <!-- Esta barra é apenas uma demonstração de página. Substitua pela sua logo/menu. -->
+  <header class="exemplo-topo">
+    <div class="exemplo-topo__conteudo">
+      <a href="./" class="exemplo-logo" aria-label="Página inicial">SUA <span>LOGO</span></a>
+      <nav aria-label="Menu principal" class="exemplo-menu"><a href="#liga-brasileirao">COLEÇÕES</a><a href="#liga-brasileirao">CLUBES</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INÍCIO DA SEÇÃO PARA INSERIR NA SUA LANDING PAGE -->
+    <section class="vitrine-liga" id="liga-brasileirao" aria-labelledby="vitrine-liga-titulo">
+      <div class="vitrine-liga__banner">
+        <img class="vitrine-liga__banner-imagem" alt="" hidden />
+        <div class="vitrine-liga__efeito" aria-hidden="true"></div>
+        <div class="vitrine-liga__banner-conteudo">
+          <span class="vitrine-liga__etiqueta">COLEÇÃO DE FUTEBOL</span>
+          <h1 class="vitrine-liga__titulo" id="vitrine-liga-titulo">CAMPEONATO BRASILEIRO</h1>
+          <p class="vitrine-liga__descricao">Encontre as camisas do seu time favorito.</p>
+          <span class="vitrine-liga__chamada">ESCOLHA SEU CLUBE <span aria-hidden="true">↘</span></span>
+        </div>
+        <div class="vitrine-liga__marca" aria-hidden="true">BR<br />26</div>
+      </div>
+
+      <div class="vitrine-liga__linha-titulo">
+        <div>
+          <span class="vitrine-liga__sobre">NAVEGUE POR TIME</span>
+          <h2>Escolha seu clube</h2>
+        </div>
+        <div class="vitrine-liga__acoes">
+          <button class="vitrine-liga__seta" data-direcao="-1" type="button" aria-label="Deslizar para a esquerda">&#8592;</button>
+          <button class="vitrine-liga__seta" data-direcao="1" type="button" aria-label="Deslizar para a direita">&#8594;</button>
+        </div>
+      </div>
+      <div class="vitrine-liga__viewport" tabindex="0" aria-label="Carrossel horizontal de clubes; use as setas ou deslize">
+        <div class="vitrine-liga__lista" aria-live="off"></div>
+      </div>
+      <p class="vitrine-liga__aviso" role="status" aria-live="polite"></p>
+    </section>
+    <!-- FIM DA SEÇÃO -->
+  </main>
+</body>
+</html>
